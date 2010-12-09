@@ -12,7 +12,7 @@ class ExceptionNotifier
 
   def initialize(app, options = {})
     @app, @options = app, options
-    @options[:ignore_exceptions] ||= self.class.default_ignore_exceptions
+    # @options[:ignore_exceptions] ||= self.class.default_ignore_exceptions
   end
 
   def call(env)
